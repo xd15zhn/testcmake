@@ -12,7 +12,6 @@ target_include_directories(${CMAKE_PROJECT_NAME}
     PUBLIC "${LIBSUB_DIR}/inc"
 )
 target_link_libraries(${CMAKE_PROJECT_NAME}
-    PUBLIC "${LIBADD_DIR}/build/liblibadd.a"
-    PUBLIC "${LIBSUB_DIR}/build/liblibsub.a"
+    PUBLIC libadd
+    PUBLIC libsub
 )
-
