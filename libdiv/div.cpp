@@ -1,6 +1,4 @@
 #include "div.hpp"
-#include "sub.hpp"
-#include "add.hpp"
 
 double fcndiv(double a, double b)
 {
