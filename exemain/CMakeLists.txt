@@ -7,14 +7,13 @@ project(testcmake)
 set(CMAKE_BUILD_TYPE release)
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 target_include_directories(${CMAKE_PROJECT_NAME}
-    PUBLIC "${PROJECT_SOURCE_DIR}"
+    PUBLIC "${LIBDIV_DIR}"
     PUBLIC "${LIBADD_DIR}"
     PUBLIC "${LIBSUB_DIR}/inc"
-    PUBLIC "${LIBDIV_DIR}"
 )
 target_link_libraries(${CMAKE_PROJECT_NAME}
+    PUBLIC "${LIBDIV_DIR}/build/liblibdiv.a"
     PUBLIC "${LIBADD_DIR}/build/liblibadd.a"
     PUBLIC "${LIBSUB_DIR}/build/liblibsub.a"
-    PUBLIC "${LIBDIV_DIR}/build/liblibdiv.a"
 )
 
