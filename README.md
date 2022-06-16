@@ -1,7 +1,7 @@
 # testcmake
-cmake子项目包含测试
+cmake tests for subproject inclusions
 
-# 结构
+# Structure
 ```mermaid
 graph TB
 libadd --> libdiv
@@ -28,7 +28,7 @@ libdiv --> exemain
         └── main.cpp
 ```
 
-# 参考链接
+# Reference
 [modern cmake](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/)  
 [Modern CMake is like inheritance](https://kubasejdak.com/modern-cmake-is-like-inheritance)  
 [CMake: Public VS Private VS Interface](https://leimao.github.io/blog/CMake-Public-Private-Interface/)  
